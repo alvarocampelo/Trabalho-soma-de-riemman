@@ -74,4 +74,5 @@ O uso do programa secundário é concerteza mais simples e didático, mas trago 
 * Os casos de 'ERRO' seguem as regras matemáticas padrão
 * Se possível não digitar nada além de números, há risco de bugs
 * Pode usar M_PI e M_E como pi e número de Euler
+* Como não sei onde rodarão o código, não inseri nenhuma limpeza de terminal
 * Criado com intuito de facilitar o uso, aporveite!
