@@ -16,4 +16,17 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 
 -----------------------------------------------------------
 
-#Funcionamento
+## Funcionamento
+> Para começar, vamos destrinchar as variaveis usadas:
+* __a e b__: são os limites inferiores e superiores da integral
+* __n__: é o número de repartiçoes da soma, quão maior, mais exato será o cálculo
+* __x__: sempre será o x de qualquer função, variando conforme os limites estabelecidos
+* __resp__: valor que em todas as funções armazenam a soma das respostas
+* __dx e xi__: são respectivamente a largura de cada retângulo(delta x), e a altura de x no momento atual, varia com a função
+
+> Algumas mais específicas:
+* __gr__: aparece apenas na função polinomial, e representa o grau da função, é usado para quantificar os termos presentes
+* __A[ ]__: aparece apenas na função polinomial, e representa uma lista com os coeficientes em uma ordem crescente, portanto o primeiro termo que aparece, é o termo independente, subindo o grau da equação dependendo o grau(gr)
+* __base__: aparece nas funções exponencial e logaritimica, e são respectivamente a base do expoente x, e a base do log de x
+* __enesimo__: aparece apenas na função da raiz enésima, e representa esse valor n, "enésimo" valor.
+
