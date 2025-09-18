@@ -9,13 +9,13 @@ double funcaop(double x, double A[], int gr){ //função feita para calcular o v
     return y;
 }
 double funcaot(double x){ //função feita para calcular o valor de uma função trigonometrica
-    return sin(x);
+    return cos(x); //possível alteração de função!
 }
 double funcaoe(double base, double x){ //função feita para calcular o valor de uma função exponencial
     return pow(base ,x);
 }
-double funcaol(double x){ //função feita para calcular o valor de uma função logaritimica
-    return log(x);
+double funcaol(double base, double x){ //função feita para calcular o valor de uma função logaritimica
+    return log(x)/log(base);
 }
 double funcaor(double enesimo, double x){ //função feita para calcular o valor de uma função de raiz enésima
     return pow(x, 1/enesimo);
@@ -43,16 +43,16 @@ double riemanne(int n, double base, double a, double b) {  //função da soma de
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
         double xi = a + i * dx;
-        resp += funcaoe(b ,xi)*dx;
+        resp += funcaoe(base ,xi)*dx;
     }
     return resp;
 }
-double riemannl(int n, double a, double b) {  //função da soma de riemann direcionada a funções logaritimicas
+double riemannl(int n, double base, double a, double b) {  //função da soma de riemann direcionada a funções logaritimicas
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
         double xi = a + i * dx;
-        resp += funcaol(xi)*dx;
+        resp += funcaol(base, xi)*dx;
     }
     return resp;
 }
@@ -61,20 +61,20 @@ double riemannr(int n, double enesimo, double a, double b) {  //função da soma
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
         double xi = a + i * dx;
-        resp += funcaor(enesimo, xi);
+        resp += funcaor(enesimo, xi)*dx;
     }
     return resp;
 }
 int main()
 {
-    double P[3]={4, 2, 1};
+    double P[3]={4, 4, 1};
     double z= riemannp(10000, 0, 2, P, 2);
     cout << z<< endl;
-    z=riemannt(10000, 0, M_PI);
+    z=riemannt(30000, 0, M_PI);
     cout << z<< endl;
     z=riemanne(10000, 2, 0, 3);
     cout << z<< endl;
-    z=riemannl(20000, 1, M_E);
+    z=riemannl(50000, 2, 1, 8);
     cout << z<< endl;
     z=riemannr(10000, 4, 0, 3);
     cout << z<< endl;
