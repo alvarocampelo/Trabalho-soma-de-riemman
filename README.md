@@ -37,5 +37,25 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 
 O funcionamento do sistema tenta aproximar-se a uma simples integral resolvida por soma de riemann. É usado um sistema de loops simples que permitem que o código seja aproximadamente linear (O(n)).
 
-Em relação a o uso trigonométrico, a função funcaot pode ser adaptada para outras funções trigonométricas, como sen(x), ou tg(x). Por padrão foi escrita em cos(x)
+Em relação a o uso trigonométrico, a função funcaot pode ser adaptada para outras funções trigonométricas, como sen(x), ou tg(x). Por padrão foi escrita em cos(x):
+```cpp
+double funcaot(double x){ //função feita para calcular o valor de uma função trigonometrica
+    return cos(x); //possível alteração de função!
+}
+```
+Para usar o sistema, você pode ou usar o primeiro arquivo e tratar do código puro, chamando funções individualmente, com o padrão de chamada sendo:
+* __riemannp(número n de repartições, limite inferior(a), limite superior(b), lista (P ou A) de coeficientes, grau do polinomio)__
+* __riemannt(número n de repartições, limite inferior(a), limite superior(b),__
+* __riemanne(número n de repartições, base do expoente x,limite inferior(a), limite superior(b),__
+* __riemannl(número n de repartições, base do logaritimo de x,limite inferior(a), limite superior(b),__
+* __riemannr(número n de repartições, número n da raiz enésima, limite inferior(a), limite superior(b),__
 
+Com esse chamado, a função precisa de uma variavel para imprimir o resultado em seguida. Segue exemplo:
+```cpp
+double P[3]={4, 4, 1}; // representa a equação polinomial x^2+4x+4
+    double z= riemannp(10000, 0, 2, P, 2); // 10000 repartições, do limite inferior 0 até o superior 2, da lista P[ ], de grau 2
+    cout << z<< endl;
+```
+
+Ou entrar no segundo, com um sistema mais interativo e direcionado.
+> Algo extra que tomei interesse, para deixar o sistema mais 'user friendly'
