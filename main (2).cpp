@@ -10,7 +10,7 @@ double funcaop(double x, double A[], int gr){ //função feita para calcular o v
     return y;
 }
 double funcaot(double x){ //função feita para calcular o valor de uma função trigonometrica
-    return sin(x); //possível alteração de função!
+    return cos(x); //possível alteração de função!
 }
 double funcaoe(double base, double x){ //função feita para calcular o valor de uma função exponencial
     return pow(base ,x);
