@@ -1,26 +1,26 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-double funcaop(double x, double A[], int gr){
+double funcaop(double x, double A[], int gr){ //função feita para calcular o valor de uma equação polinomial
     double y=0;
     for(int i=0; i<=gr; i++){
         y+=pow(x, i)* A[i];
     }
     return y;
 }
-double funcaot(double x){
+double funcaot(double x){ //função feita para calcular o valor de uma função trigonometrica
     return sin(x);
 }
-double funcaoe(double base, double x){
+double funcaoe(double base, double x){ //função feita para calcular o valor de uma função exponencial
     return pow(base ,x);
 }
-double funcaol(double x){
+double funcaol(double x){ //função feita para calcular o valor de uma função logaritimica
     return log(x);
 }
-double funcaor(double enesimo, double x){
-    return pow(1/enesimo, x);
+double funcaor(double enesimo, double x){ //função feita para calcular o valor de uma função de raiz enésima
+    return pow(x, 1/enesimo);
 }
-double riemannp(int n, double a, double b, double A[], int gr){
+double riemannp(int n, double a, double b, double A[], int gr){ //função da soma de riemann direcionada a polinomios
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for(int i=0; i<n; i++){
@@ -29,7 +29,7 @@ double riemannp(int n, double a, double b, double A[], int gr){
     }
     return resp;
 }
-double riemannt(int n, double a, double b) {
+double riemannt(int n, double a, double b) {  //função da soma de riemann direcionada a funções trigonométricas
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
@@ -38,7 +38,7 @@ double riemannt(int n, double a, double b) {
     }
     return resp;
 }
-double riemanne(int n, double base, double a, double b) {
+double riemanne(int n, double base, double a, double b) {  //função da soma de riemann direcionada a funções exponenciais
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
@@ -47,7 +47,7 @@ double riemanne(int n, double base, double a, double b) {
     }
     return resp;
 }
-double riemannl(int n, double a, double b) {
+double riemannl(int n, double a, double b) {  //função da soma de riemann direcionada a funções logaritimicas
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
@@ -56,7 +56,7 @@ double riemannl(int n, double a, double b) {
     }
     return resp;
 }
-double riemannr(int n, double enesimo, double a, double b) {
+double riemannr(int n, double enesimo, double a, double b) {  //função da soma de riemann direcionada a funções de raiz enésima
     double resp=0;
     double dx=(b-a)/static_cast<double>(n);
     for (int i = 0; i < n; i++) {
