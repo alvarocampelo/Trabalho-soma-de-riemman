@@ -1,5 +1,5 @@
 # Trabalho-soma-de-riemman
-Trabalho da cadeira de Cálculo II, do professor Renan Santos;
+Trabalho da cadeira de Cálculo II, do professor Renan Santos
 
 -------------------------------------------------------------
 
@@ -12,4 +12,8 @@ O programa compila uma elaborada soma de riemman para os 5 tipos de integrais, s
 
 Com isso, as funções referentes a cada uma delas acompanham a primeira letra de seu nome(p,t,e,l,r), após o título atrelado ao calculo do resultado tanto da função quanto da soma de riemann. Ex: funcaop ou riemanne (respectivamente para função polinomial e soma de riemann da funcao exponencial)
 
-O programa possui uma função individual para cada etapa de calculo, para cada possi
+O programa possui uma função individual para cada etapa de calculo, para cada possivel função.
+
+-----------------------------------------------------------
+
+#Funcionamento
