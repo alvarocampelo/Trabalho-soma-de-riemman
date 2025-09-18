@@ -51,6 +51,9 @@ Para usar o sistema, você pode ou usar o primeiro arquivo e tratar do código p
 * __riemannl(número n de repartições, base do logaritimo de x,limite inferior(a), limite superior(b),__
 * __riemannr(número n de repartições, número n da raiz enésima, limite inferior(a), limite superior(b),__
 
+Usar M_PI para o número π
+Usar M_E para o número de Euler
+
 > O sistema vem com alguns exemplos já escritos, porém podem ser facilmente mudados com as informações desse read me;
 
 Com esse chamado, a função precisa de uma variavel para imprimir o resultado em seguida. Segue exemplo:
