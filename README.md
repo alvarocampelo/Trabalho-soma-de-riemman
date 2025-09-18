@@ -30,3 +30,12 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 * __base__: aparece nas funções exponencial e logaritimica, e são respectivamente a base do expoente x, e a base do log de x
 * __enesimo__: aparece apenas na função da raiz enésima, e representa esse valor n, "enésimo" valor.
 
+
+---------------------------------------------------------
+
+## Sistema e suas funcionalidades
+
+O funcionamento do sistema tenta aproximar-se a uma simples integral resolvida por soma de riemann. É usado um sistema de loops simples que permitem que o código seja aproximadamente linear (O(n)).
+
+Em relação a o uso trigonométrico, a função funcaot pode ser adaptada para outras funções trigonométricas, como sen(x), ou tg(x). Por padrão foi escrita em cos(x)
+
