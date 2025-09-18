@@ -33,7 +33,8 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 
 ---------------------------------------------------------
 
-## Sistema e suas funcionalidades
+## Sistema primário e suas funcionalidades
+> _main(1).cpp_
 
 O funcionamento do sistema tenta aproximar-se a uma simples integral resolvida por soma de riemann. É usado um sistema de loops simples que permitem que o código seja aproximadamente linear (O(n)).
 
@@ -50,6 +51,8 @@ Para usar o sistema, você pode ou usar o primeiro arquivo e tratar do código p
 * __riemannl(número n de repartições, base do logaritimo de x,limite inferior(a), limite superior(b),__
 * __riemannr(número n de repartições, número n da raiz enésima, limite inferior(a), limite superior(b),__
 
+> O sistema vem com alguns exemplos já escritos, porém podem ser facilmente mudados com as informações desse read me;
+
 Com esse chamado, a função precisa de uma variavel para imprimir o resultado em seguida. Segue exemplo:
 ```cpp
 double P[3]={4, 4, 1}; // representa a equação polinomial x^2+4x+4
@@ -59,3 +62,16 @@ double P[3]={4, 4, 1}; // representa a equação polinomial x^2+4x+4
 
 Ou entrar no segundo, com um sistema mais interativo e direcionado.
 > Algo extra que tomei interesse, para deixar o sistema mais 'user friendly'
+
+----------------------------------------------------------
+
+## Programa secundário
+> _main(2).cpp_
+
+O uso do programa secundário é concerteza mais simples e didático, mas trago alguns detalhes também...
+* O máximo do expoente polinomial é uma sugestão, visto que depende de máquina a máquina
+* Novamente, a função trigonométrica pode ser alterada, mas o menu não atualizaria
+* Os casos de 'ERRO' seguem as regras matemáticas padrão
+* Se possível não digitar nada além de números, há risco de bugs
+* Pode usar M_PI e M_E como pi e número de Euler
+* Criado com intuito de facilitar o uso, aporveite!
