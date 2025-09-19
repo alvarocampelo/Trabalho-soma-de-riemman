@@ -30,7 +30,9 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 * __base__: aparece nas funções exponencial e logaritimica, e são respectivamente a base do expoente x, e a base do log de x
 * __enesimo__: aparece apenas na função da raiz enésima, e representa esse valor n, "enésimo" valor.
 
-
+> Extras:
+* __Valor máximo__ testado como n foi 30500, em uma máquina online
+* 
 ---------------------------------------------------------
 
 ## Sistema primário e suas funcionalidades
@@ -79,3 +81,23 @@ O uso do programa secundário é concerteza mais simples e didático, mas trago 
 * Pode usar M_PI e M_E como pi e número de Euler
 * Como não sei onde rodarão o código, não inseri nenhuma limpeza de terminal
 * Criado com intuito de facilitar o uso, aporveite!
+
+-------------------------------------------------------------
+
+## Casos testes usados:
+
+> No vídeo:
+```cpp
+    double P[3]={4, 4, 1}; // x^2 + 4x + 4
+    double z= riemannp(10000, 0, 2, P, 2); // integral de P, de 0 ate 2
+    cout << z<< endl; // valor real = 18.667
+    z=riemannt(30500, 0, M_PI);// integral de sen(x), de 0 até pi
+    cout << z<< endl;// valor "real" = 0
+    z=riemanne(10000, 2, 0, 4);// integral de 2^x, de 0 até 4
+    cout << z<< endl; // valor "real" = 21.64
+    z=riemannl(50000, 2, 1, 8); // integral de log2(x), de 1 até 8
+    cout << z<< endl; // valor "real" = 13.90
+    z=riemannr(10000, 4, 0, 16); // integral da raiz de indice 4, de 0 até 16
+    cout << z<< endl; // valor real 25.6
+```
+> Extras:
