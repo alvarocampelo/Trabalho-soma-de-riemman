@@ -33,6 +33,9 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 > Extras:
 * __Valor máximo__ testado como n foi 30500, em uma máquina online
 * __Sistema secundário__ tem alguns erros, foquemos no primário
+* Como a __integral da soma é a soma das integrais__ , para fazer, por exemplo ∫ e^x + 3x^2 - ln(x) dx, é necessário fazer os três cálculos e somar separadamente, assim: ∫ e^x dx + ∫ 3x^2 dx - ∫ ln(x) dx
+
+
 ---------------------------------------------------------
 
 ## Sistema primário e suas funcionalidades
