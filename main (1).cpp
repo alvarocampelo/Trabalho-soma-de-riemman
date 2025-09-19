@@ -67,16 +67,15 @@ double riemannr(int n, double enesimo, double a, double b) {  //função da soma
 }
 int main()
 {
-    double P[3]={4, 4, 1};
-    double z= riemannp(10000, 0, 2, P, 2);
-    cout << z<< endl;
-    z=riemannt(30000, 0, M_PI);
-    cout << z<< endl;
-    z=riemanne(10000, 2, 0, 3);
-    cout << z<< endl;
-    z=riemannl(50000, 2, 1, 8);
-    cout << z<< endl;
-    z=riemannr(10000, 4, 0, 3);
-    cout << z<< endl;
-    return 0;
+    double P[3]={4, 4, 1}; // x^2 + 4x + 4
+    double z= riemannp(10000, 0, 2, P, 2); // integral de P, de 0 ate 2
+    cout << z<< endl; // valor real = 18.667
+    z=riemannt(30500, 0, M_PI);// integral de sen(x), de 0 até pi
+    cout << z<< endl;// valor "real" = 0
+    z=riemanne(10000, 2, 0, 4);// integral de 2^x, de 0 até 4
+    cout << z<< endl; // valor "real" = 21.64
+    z=riemannl(50000, 2, 1, 8); // integral de log2(x), de 1 até 8
+    cout << z<< endl; // valor "real" = 13.90
+    z=riemannr(10000, 4, 0, 16); // integral da raiz de indice 4, de 0 até 16
+    cout << z<< endl; // valor real 25.6
 }
