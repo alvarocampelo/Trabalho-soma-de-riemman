@@ -107,6 +107,6 @@ O uso do programa secundário é concerteza mais simples e didático, mas trago 
 > * ∫ e^x dx de 0 até 1 = 1.7282
 > * ∫ 3^x dx de 0 até 2 = 7.2811
 > * ∫ raiz quadrada de x de 0 até 9 = 17.9986
-> * ∫ tan(x) dx de 0 até π/4
+> * ∫ tan(x) dx de 0 até π/4 = 0.3465
 >   
 
