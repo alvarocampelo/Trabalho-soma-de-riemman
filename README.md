@@ -48,10 +48,10 @@ double funcaot(double x){ //função feita para calcular o valor de uma função
 ```
 Para usar o sistema, você pode ou usar o primeiro arquivo e tratar do código puro, chamando funções individualmente, com o padrão de chamada sendo:
 * __riemannp(número n de repartições, limite inferior(a), limite superior(b), lista (P ou A) de coeficientes, grau do polinomio)__
-* __riemannt(número n de repartições, limite inferior(a), limite superior(b),__
-* __riemanne(número n de repartições, base do expoente x,limite inferior(a), limite superior(b),__
-* __riemannl(número n de repartições, base do logaritimo de x,limite inferior(a), limite superior(b),__
-* __riemannr(número n de repartições, número n da raiz enésima, limite inferior(a), limite superior(b),__
+* __riemannt(número n de repartições, limite inferior(a), limite superior(b))__
+* __riemanne(número n de repartições, base do expoente x,limite inferior(a), limite superior(b))__
+* __riemannl(número n de repartições, base do logaritimo de x,limite inferior(a), limite superior(b))__
+* __riemannr(número n de repartições, número n da raiz enésima, limite inferior(a), limite superior(b))__
 
 Usar M_PI para o número π
 Usar M_E para o número de Euler
