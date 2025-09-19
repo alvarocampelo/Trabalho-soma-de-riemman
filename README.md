@@ -32,7 +32,7 @@ O programa possui uma função individual para cada etapa de calculo, para cada 
 
 > Extras:
 * __Valor máximo__ testado como n foi 30500, em uma máquina online
-* 
+* __Sistema secundário__ tem alguns erros, foquemos no primário
 ---------------------------------------------------------
 
 ## Sistema primário e suas funcionalidades
@@ -100,4 +100,13 @@ O uso do programa secundário é concerteza mais simples e didático, mas trago 
     z=riemannr(10000, 4, 0, 16); // integral da raiz de indice 4, de 0 até 16
     cout << z<< endl; // valor real 25.6
 ```
-> Extras:
+> Extra- vídeo:
+> 
+> * ∫ 2x+1 dx de 0 até 3 = 11.9997
+> * ∫ 3x^2 dx de 1 até 2 = 6.99985
+> * ∫ e^x dx de 0 até 1 = 1.7282
+> * ∫ 3^x dx de 0 até 2 = 7.2811
+> * ∫ raiz quadrada de x de 0 até 9 = 17.9986
+> * ∫ tan(x) dx de 0 até π/4
+>   
+
